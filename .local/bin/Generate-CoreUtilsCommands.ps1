@@ -18,6 +18,9 @@ function Main {
     @{ Command = "ls"; Exe = "eza.exe"; DefaultArgs = "--oneline --long --icons=auto --color=auto --group-directories-first" },
     @{ Command = "cat"; Exe = "bat.exe" },
 
+    @{ Command = "shutdown-now"; Exe = "shutdown.exe"; DefaultArgs = "/t 0 /s" },
+    @{ Command = "reboot"; Exe = "shutdown.exe"; DefaultArgs = "/t 0 /r" },
+
     @{ Command = "["; FileName = "``[.cmd" }
     @{ Command = "b2sum" }
     @{ Command = "b3sum" }
